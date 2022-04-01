@@ -1,0 +1,8 @@
+<meta>
+	<!-- Auto generated using VSCode MTA:SA Lua by Subtixx -->
+	<info author="VSCode MTA:SA Lua" type="script" name="test-system" version="0.1.0" />
+	<script src="c_client.lua" type="client" />
+	<script src="s_server.lua" type="server" />
+	<file src="pisnicka.mp3" />
+	<file src="login-song.mp3"/>
+</meta>
