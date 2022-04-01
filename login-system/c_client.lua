@@ -47,6 +47,7 @@ end
 function loginPlayer()
     local username = guiGetText(username)
     local password = guiGetText(password)
+    local role
 
     triggerServerEvent("playerLogin", localPlayer, username, password)
 

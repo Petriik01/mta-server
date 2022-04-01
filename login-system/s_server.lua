@@ -29,27 +29,25 @@ addEventHandler("playerJoinServer", getRootElement(), everythingOk)
 -- register end
 
 -- login start
-function loginPlayerNow(thePlayer, username, password)
+function loginPlayerNow(username, password)
     local username = username
     local password = password 
 
     local checkaccount = dbQuery(db, 'SELECT * FROM `users` WHERE username=? AND password=?', username, password)
     local result = dbPoll(checkaccount, -1)
     if #result > 0 then 
-        outputChatBox("Přilhášeno úspěšně", client, 0,50,255)
+        outputChatBox("Přihlášeno úspěšně", client, 0,50,255)
         spawnPlayer(client, 0, 0, 5)
         fadeCamera(client,true)
         setCameraTarget(client,client)
         setElementModel(client,0)
         triggerClientEvent("turnOffGUI", getRootElement())
-        setElementData(thePlayer, "admin", level)
     else 
         outputChatBox("Špatné přihlašovací údaje!", client, 255,0,0)
     end
 end
 addEvent("playerLogin", true)
 addEventHandler("playerLogin", getRootElement(), loginPlayerNow) 
-
 
 -- login end
 
