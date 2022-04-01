@@ -1,0 +1,5 @@
+<meta>
+	<!-- Auto generated using VSCode MTA:SA Lua by Subtixx -->
+	<info author="VSCode MTA:SA Lua" type="script" name="admin-system" version="0.1.0" />
+	<script src="s_commands.lua" type="server" />
+</meta>

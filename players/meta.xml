@@ -1,0 +1,9 @@
+<meta>
+  <script src="script.lua" type="server"/>
+  <script src="player.lua" type="server"/>
+  <script src="c_commands.lua" type="client"/>
+  <script src="s_skin.lua" type="server"/>
+  <script src="c_welcome.lua" type="client"/>
+  <script src="s_welcome.lua" type="server"/>
+  <file src="pisnicka.mp3" />
+</meta>
